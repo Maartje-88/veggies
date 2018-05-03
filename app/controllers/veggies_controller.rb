@@ -21,6 +21,25 @@ def create
     end
 end
 
+def edit
+    @veggy = Veggy.find(params[:id])
+  end
+
+def update
+  @veggy = Veggy.find(params[:id])
+    if @veggy.update(veggy_params)
+      redirect_to veggies_path
+    else
+      render :edit
+    end
+end
+
+def destroy
+  @veggy = Veggy.find(params[:id])
+  @veggy.destroy
+  redirect_to veggies_url
+end  
+
 private
 
 def veggy_params
