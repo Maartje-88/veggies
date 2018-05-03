@@ -1,0 +1,2 @@
+class Veggy < ApplicationRecord
+end

@@ -1,0 +1,8 @@
+<h1> Veggies </h1>
+<ul>
+    <% @veggies.each do |veggy| %>
+    <li><%= link_to veggy.name, veggy %></li>
+  <% end %>
+</ul>
+
+<%= link_to "New Veggy", new_veggy_path %>
