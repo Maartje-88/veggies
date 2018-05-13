@@ -1,0 +1,64 @@
+/* main.css */
+html, body, h1, h2, h3, h4, h5, h6, div, ul, ol, li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+}
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: fantasy, helvetica, sans-serif;
+}
+h2{
+  font-size: 20px;
+  font-weight: 150;
+  text-align: center;
+  font-family: fantasy, helvetica, sans-serif;
+  color: #ffffff;
+}
+h2 strong{
+  font-weight: 150;
+}
+h3{
+font-size: 18px;
+font-weight: normal;
+font-family: fantasy, helvetica, sans-serif;
+text-align: center;
+border-bottom: 1px solid #555555;
+width: 700px;
+margin: 18px auto 18px auto;
+}
+p{
+  font-size: 16px;
+  font-weight: normal;
+  font-family: fantasy, helvetica, sans-serif;
+  text-align: center;
+  color: #000000;
+}
+.header{
+  background-color: #442233;
+  color: #ffffff;
+}
+.tagline{
+  background-color: #000000;
+  padding: 20px 0 20px 0;
+}
+.airlines, .transportation, .food, .activities{
+  width: 700px;
+  margin: 0 auto;
+}
+a{
+  font-size: 16px;
+  font-weight: normal;
+  font-family: fantasy, helvetica, sans-serif;
+  color: #000000;
+}
+a:hover{
+  color: #0000cc;
+}
+img{
+  padding-left: 140px;
+}
