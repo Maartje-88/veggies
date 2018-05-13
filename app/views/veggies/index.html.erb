@@ -6,11 +6,9 @@
       <% @veggies.each do |veggy| %>
       <li>
         <%= link_to veggy.name, veggy %>
-        <%= link_to "Edit", edit_veggy_path(veggy) %>
-        <%= link_to "Destroy", veggy, method: :delete %>
       </li>
     <% end %>
   </ul>
 <% end %>
 
-<%= link_to "New Veggy", new_veggy_path %>
+<p class="nav-item"><%= link_to "New Veggy", new_veggy_path, class: "btn btn-success" %></p>
