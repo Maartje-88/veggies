@@ -1,7 +1,11 @@
-<%= form_for @veggy do |f| %>
+<%= form_for @veggy, url: veggies_path, html: { multipart: true} do |f| %>
   <div>
     <%= f.label :name %>
     <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
   </div>
   <div>
     <%= f.submit "Add Veggy" %>

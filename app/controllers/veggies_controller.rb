@@ -44,7 +44,7 @@ class VeggiesController < ApplicationController
   private
 
   def veggy_params
-    params.require(:veggy).permit(:name)
+    params.require(:veggy).permit(:name, :image)
   end
 
 end
