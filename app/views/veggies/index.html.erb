@@ -1,14 +1,12 @@
-<% if user_signed_in? %>
-  <h1>Welcome back!</h1>
-<% else %>
-  <h1> Veggies </h1>
-  <ul>
-      <% @veggies.each do |veggy| %>
-      <li>
-        <%= link_to veggy.name, veggy %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<h1> Veggies </h1>
+<ul>
+  <% @veggies.each do |veggy| %>
+    <li>
+      <%= link_to veggy.name, veggy %>
+    </li>
+  <% end %>
+</ul>
 
-<p class="nav-item"><%= link_to "New Veggy", new_veggy_path, class: "btn btn-success" %></p>
+<% if user_signed_in? %>
+  <p class="nav-item"><%= link_to "New Veggy", new_veggy_path, class: "btn btn-success" %></p>
+<% end %>
