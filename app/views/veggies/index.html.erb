@@ -3,7 +3,7 @@
 <ul>
   <% @veggies.each do |veggy| %>
     <li>
-      <%= link_to veggy.name, veggy %>
+      <%= link_to veggy.name, veggy, class: "text-success" %>
     </li>
   <% end %>
 </ul>
